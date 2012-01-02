@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+      Tasks
+    </title>
+    <script src='modernizr.js'></script>
+    <link rel='stylesheet' href='960.css' type='text/css' media='all'></link>
+    <style type='text/css'>
+    
+      body{
+        margin-top: 75px;
+      }
+      
+      #navigation{
+        position: relative;
+        top: 50px;
+        left: 0px;
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        padding-right: 4px;
+        border-bottom: 2px solid rgba(153,3,3,1);
+      }
+      
+      #navigation a.nav{
+        padding: 4px 5px;
+        color: black;
+        text-decoration: none;
+        font: helvetica;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px;
+        margin-right: 2px;
+        background: rgb(255,255,255); /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2Y3ZjdmNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(247,247,247,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(51%,rgba(247,247,247,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+        background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+        border: 1px solid lightgray;
+        border-bottom: none;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-topright: 3px;
+        -moz-border-radius-bottomright: 0px;
+        -moz-border-radius-bottomleft: 0px;
+        -webkit-border-radius: 3px 3px 0px 0px;
+        border-radius: 3px 3px 0px 0px;
+      }
+      
+      #navigation a.nav.active{
+        background: rgb(242,42,24); /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyMmExOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5OTAzMDMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  rgba(242,42,24,1) 0%, rgba(153,3,3,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,42,24,1)), color-stop(100%,rgba(153,3,3,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(242,42,24,1) 0%,rgba(153,3,3,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(242,42,24,1) 0%,rgba(153,3,3,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(242,42,24,1) 0%,rgba(153,3,3,1) 100%); /* IE10+ */
+        background: linear-gradient(top,  rgba(242,42,24,1) 0%,rgba(153,3,3,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f22a18', endColorstr='#990303',GradientType=0 ); /* IE6-8 */
+        color: white;
+        border: 1px solid rgba(207,4,4,1);
+        border-bottom: none;
+      }
+      
+      #new_task{
+        margin:0px;
+        padding: 0px;
+        line-height: 24px;
+        border: 1px solid lightgray;
+        font-weight: normal;
+        font-size: 14px;
+        font-family: helvetica;
+        min-height: 26px;
+        height: 26px;
+      }
+      
+      #new_task:focus{
+        outline: none;
+        background-color: rgba(254,252,234,1);
+      }
+      
+      #new_task_section{
+        position: relative;
+        left: 20%;
+      }
+      
+      #add_new_task{
+        background: rgb(255,255,255); /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+        background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 53%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(53%,rgba(246,246,246,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 53%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 53%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 53%); /* IE10+ */
+        background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 53%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-8 */
+        padding: 5px 6px;
+        text-decoration: none; 
+        color: black; 
+        font: helvetica; 
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        top: 0px;
+        margin-left: 0px;
+        text-align: center;
+        -moz-border-radius-topleft: 0px;
+        -moz-border-radius-topright: 3px;
+        -moz-border-radius-bottomright: 3px;
+        -moz-border-radius-bottomleft: 0px;
+        -webkit-border-radius: 0px 3px 3px 0px;
+        border-radius: 0px 3px 3px 0px;
+        border: 1px solid lightgray;
+        border-left: none;
+      }
+      
+      #inbox_tasks{
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top:50px;
+      }
+      
+      #inbox_tasks div.inbox{
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: 0px;
+      }
+      #inbox_tasks div.inbox  span.options{
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        right: 0px;
+        display: block;
+      }
+      
+      #inbox_tasks div.inbox a.do_this_today{
+        text-decoration: none;
+        font-weight: normal;
+        font-family: helvetica;
+        font-size: 12px;
+        text-align: center;
+        border:1px solid lightgray;
+        margin: 0px;
+        padding: 0px;
+        min-height: 21px;
+        height: 21px;
+        padding-top: 5px;
+        color: black;
+        z-index: 10000;
+      }
+      
+      #inbox_tasks div.inbox input.content{
+        margin:0px;
+        border: 1px solid lightgray;
+        line-height: 24px;
+        font-weight: normal;
+        font-size: 13px;
+        font-family: helvetica;
+        min-height: 24px;
+        height: 24px;
+      }
+      
+      #inbox_tasks div.inbox input.content:focus{
+        outline: none;
+        background-color: rgba(254,252,234,1);
+      }
+      
+       #inbox_tasks div.inbox span.options a.delete{
+
+       }
+    </style>
+</head>
+<body>
+  <div class='container_24'>
+    <section id='new_task_section'>
+      <input type='text' id='new_task' name='new_task' class='grid_10'></input>
+      <a href='#new_task' id='add_new_task' name='add_new_task' class='grid_3'>Add Task</a>
+    </section>
+    
+    <nav id='navigation' class='grid_24'>
+      <a href='#inbox' class='nav grid_2 active'>Inbox</a>
+      <a href='#today' class='nav grid_2'>Today</a>
+      <a href='#completed' class='nav grid_3'>Completed</a>
+    </nav>    
+    
+    <section id='inbox_tasks' class='grid_24'>
+      <div class='inbox task' id='inbox_1'>
+        <input type='text' class='content grid_24' value='Complete the HTML mockup'></input>
+        <span class='grid_4 options'>
+        <a href='#' class="grid_3 do_this_today">Do this today</a
+        <a href='#' class='grid_1 delete'></a>
+        </span>
+      </div>
+      <div class='inbox task' id='inbox_2'>
+        <input type='text' class='content grid_24' value='Complete the HTML mockup'></input>
+        <span class='grid_4 options'>
+        <a href='#' class="grid_3 do_this_today">Do this today</a>
+        <a href='#' class='grid_1 delete'></a>
+        </span>
+      </div>
+      <div class='inbox task' id='inbox_3'>
+        <input type='text' class='content grid_24' value='Complete the HTML mockup'></input>
+      </div>
+      <div class='inbox task' id='inbox_1'>
+        <input type='text' class='content grid_24' value='Complete the HTML mockup'></input>
+      </div>
+      <div class='inbox task' id='inbox_1'>
+        <input type='text' class='content grid_24' value='Complete the HTML mockup'></input>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
