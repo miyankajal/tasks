@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/framework/!svn/ver/24593/standard/trunk/library/Zend/Service/WindowsAzure/CommandLine
+END
+Package.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/framework/!svn/ver/24593/standard/trunk/library/Zend/Service/WindowsAzure/CommandLine/Package.php
+END
+GetAsynchronousOperation.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/framework/!svn/ver/24593/standard/trunk/library/Zend/Service/WindowsAzure/CommandLine/GetAsynchronousOperation.php
+END
+Deployment.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/framework/!svn/ver/24593/standard/trunk/library/Zend/Service/WindowsAzure/CommandLine/Deployment.php
+END
+Service.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/framework/!svn/ver/24593/standard/trunk/library/Zend/Service/WindowsAzure/CommandLine/Service.php
+END
+sample.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/framework/!svn/ver/24555/standard/trunk/library/Zend/Service/WindowsAzure/CommandLine/sample.php
+END
+Certificate.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/framework/!svn/ver/24593/standard/trunk/library/Zend/Service/WindowsAzure/CommandLine/Certificate.php
+END
+Storage.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/framework/!svn/ver/24593/standard/trunk/library/Zend/Service/WindowsAzure/CommandLine/Storage.php
+END
